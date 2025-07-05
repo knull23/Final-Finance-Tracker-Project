@@ -1,4 +1,4 @@
-// File: C:\Users\saumi\Downloads\project-bolt-sb1-hfxqazuc (1)\project\app\api\transactions\route.ts
+// File: C:\Users\saumi\Downloads\Final Finance Tracker Project\project\app\api\transactions\route.ts
 import * as entry from '../../../../../app/api/transactions/route.js'
 import type { NextRequest } from 'next/server.js'
 

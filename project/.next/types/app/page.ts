@@ -1,4 +1,4 @@
-// File: C:\Users\saumi\Downloads\project-bolt-sb1-hfxqazuc (1)\project\app\page.tsx
+// File: C:\Users\saumi\Downloads\Final Finance Tracker Project\project\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
