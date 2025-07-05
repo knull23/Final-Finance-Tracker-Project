@@ -106,6 +106,3 @@ The app will be available at http://localhost:3000.
 
 🙌 Contributions
 Feel free to open issues or submit PRs for feature suggestions or improvements. Let's build a better financial future together!
-
-📄 License
-MIT License – you're free to use, share, and build upon this project.
