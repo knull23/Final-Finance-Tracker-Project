@@ -12,16 +12,16 @@ import { ITransaction } from '@/lib/models/Transaction'
 import { IBudget } from '@/lib/models/Budget'
 
 interface TransactionsProps {
-  transactions: ITransaction[]
-  budgets: IBudget[]
+  transactions?: ITransaction[]
+  budgets?: IBudget[]
   loading: boolean
   addTransaction: (data: any) => Promise<any>
   deleteTransaction: (id: string) => Promise<void>
 }
 
 export function Transactions({ 
-  transactions, 
-  budgets, 
+  transactions=[], 
+  budgets=[], 
   loading, 
   addTransaction, 
   deleteTransaction 

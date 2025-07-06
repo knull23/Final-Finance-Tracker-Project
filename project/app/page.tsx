@@ -12,7 +12,21 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('overview')
   const financeData = useFinanceData()
 
+  // Handle API fetch errors or undefined data
+  const isLoading =
+    !financeData ||
+    !Array.isArray(financeData.transactions) ||
+    !Array.isArray(financeData.budgets)
+
   const renderContent = () => {
+    if (isLoading) {
+      return (
+        <div className="text-gray-500 text-center mt-12">
+          Loading data or failed to load. Please check connection or try again later.
+        </div>
+      )
+    }
+
     switch (activeSection) {
       case 'overview':
         return <Overview {...financeData} />

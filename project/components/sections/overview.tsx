@@ -9,12 +9,12 @@ import { ITransaction } from '@/lib/models/Transaction'
 import { IBudget } from '@/lib/models/Budget'
 
 interface OverviewProps {
-  transactions: ITransaction[]
-  budgets: IBudget[]
+  transactions?: ITransaction[]
+  budgets?: IBudget[]
   loading: boolean
 }
 
-export function Overview({ transactions, budgets, loading }: OverviewProps) {
+export function Overview({ transactions=[], budgets=[], loading }: OverviewProps) {
   if (loading) {
     return (
       <div className="space-y-8">
